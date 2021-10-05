@@ -1,0 +1,379 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    background-color: #202020;
+    
+}
+
+.header__left {
+    display: flex;
+}
+
+.header__midle {
+    display: flex;
+    align-items: center;
+}
+
+.search-btn {
+    cursor: pointer;
+    height: 40px;
+    background-color: #313131;
+    width: 65px;
+    border: none;
+    margin-left: 12px;
+}
+
+.search-icon {
+    width: 26px !important;
+    margin: auto;
+}
+.micro {
+    width: 26px !important;
+    margin: auto; 
+}
+
+.microphone-ion {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #181818;
+    border: none;
+    margin-left: 9px;
+}
+
+.menu-extensions {
+    display: flex;
+    align-items: center;
+}
+
+.header .extensions {
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.extensions li {
+    height: 24px;
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+.extensions li .avt {
+    height: 32px !important;
+    width: 32px !important;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.extensions li:last-child{
+    margin-top: -8px;
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 20px;
+    padding-right: 8px;
+}
+
+.header .youtube-logo {
+    width: 120px;
+    padding: 0 14px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.header .menu-ic {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.header .youtube-region {
+    position: absolute;
+    right: -4px;
+    top: 10px;
+    font-size: 10px;
+}
+
+.header .vn{
+    color: #8a8a8a;
+}
+
+.header .search {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 620px;
+    height: 40px;
+    background-color: #121212;
+}
+
+.header .search-video {
+    height: 35px;
+    font-family: Roboto;
+    flex: 1;
+    padding: 0 5px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #fff;
+    background-color: #121212;
+    outline: none;
+    /* border: solid 1px #303030; */
+    border: none;
+}
+
+.keyboard {
+    cursor: pointer;
+}
+
+
+/* Content */
+
+.content .main-content {
+    background-color: #181818;
+    height: 579px;
+    display: flex;
+}
+
+.content .video {
+    padding: 25px 25px 0 25px;
+    margin: 0 10px;
+    display: inline-block;
+    width: 700px;
+}
+
+.content .title-video {
+    color: #fff;
+    display: block;
+    padding-left: 35px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    /* font-size: 20px; */
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.content .hashtag {
+    color: #3EA6FF;
+    font-family: Roboto;
+    font-size: 12px;
+    display: inline-block;
+    padding-top: 15px;
+    padding-left: 35px;
+}
+
+.react  {
+    margin-left: 25px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    border-bottom: 1px solid #303030;
+    
+}
+.react li {
+    color: #fff;
+    padding-left: 53px;
+    font-size: 15px;
+    font-family: Roboto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react li:first-child {
+    color: #aaa !important;
+    font-size: 14px !important;
+    padding-left: 10px !important;
+    font-weight: normal !important;
+    cursor:text;
+    
+    
+}
+
+
+.react__item {
+    display: flex;
+    align-items: center;
+}
+
+
+.top-chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 468px;
+    height: 100%;
+    border: 1px solid #303030;
+    margin-left: 0px;
+}
+
+.chat-lt {
+    overflow-y: auto;
+    scrollbar-color: #000;
+}
+
+.content-right {
+    margin-left: 36px;
+    padding-top: 25px;
+}
+
+.content-right .chat-heading {
+    height: 55px;
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 17px;
+    font-family: Roboto;
+    color: #fff;
+    
+}
+
+.content-right .chat-lt {
+    background-color: #181818;
+}
+
+
+.content-right .chat-close {
+    height: 33px;
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.content-right .view-more {
+    margin-left: 32px;
+    cursor: pointer;
+    
+}
+
+
+
+.content-right .view-more:hover .more-2 {
+    color: #fff !important;
+}
+
+.content-right .status {
+    display: flex;
+    padding-left: 35px;
+    cursor: pointer;
+    
+}
+
+.description {
+    padding-top: 5px;
+}
+
+.sub-close {
+    font-size: 12px;
+    color: #aaa;
+    font-weight: 500;
+    
+}
+
+.content-right .chat-close:hover .sub-close {
+    color: #fff;
+    cursor: pointer;
+}
+
+.chat__item {
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    margin: 7px 0 7px 0;
+}
+
+.chat__avatar > img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.chat__name {
+    color: white;
+    opacity: .7;
+    padding-left: 15px;
+}
+
+.chat__content > .chat__text {
+    color: white;
+    padding-left: 10px;
+}
+
+.chat__content {
+    font-size: 15px;
+    font-family: Roboto;
+}
+
+.chat-show {
+    width: 468px;
+    height: 33px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #202020;
+    color: #aaa;
+    font-weight: 500;
+    cursor: pointer;
+    display: none;
+    border: 1px solid #303030;
+    font-family: Roboto;
+}
+
+.chat-show:hover {
+    color: #ffffff;
+}
+ .content .test {
+     display: flex;
+ }
+
+ .title {
+    width: 834px;
+}
+
+.space {
+    display: flex;
+    margin-left: 170px;
+    
+}
+
+.like-text {
+    cursor: pointer;
+    font-family: Roboto;
+    color: #fff;
+    font-size: 15px;
+}
+
+.undeline {
+    width: 195px;
+    border-top: 2px solid #fff;
+    margin-left: 321px;
+    margin-top: -1px;
+}
+
